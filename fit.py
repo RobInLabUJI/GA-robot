@@ -5,7 +5,9 @@ Created on Sat Feb 23 20:28:24 2013
 @author: robinlab
 """
 
-from scipy import optimize, sin, pi
+from numpy import sin, pi
+from scipy import optimize
+
 from numpy.core.multiarray import arange
 
 class Parameter:
