@@ -6,6 +6,12 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/softbank/nao/protos/Nao.proto"
 
 WorldInfo {
+  info [
+    "Aldebaran's Nao H25 V5.0"
+    "NAO is a programmable, 57-cm tall humanoid robot."
+    "The body has 25 degrees of freedom (DOF)."
+    "The sensors include 2 cameras, 4 microphones, sonar rangefinder, 2 IR emitters and receivers, 1 inertial board, and 8 pressure sensors."
+  ]
   title "Aldebaran's Nao"
   basicTimeStep 20
   FPS 20
@@ -21,8 +27,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.1319369172485238 0.05152281994923671 0.9899182031316703 2.329490444756763
-  position 2.09550317972694 -2.0984003599466288 1.0841491306594344
+  orientation -0.05003760223886702 -0.0885574989173432 0.9948134537428058 5.125416590104484
+  position -1.5002285349660816 3.1612462095999807 0.6373516021201346
   follow "NAO"
 }
 TexturedBackground {
@@ -34,5 +40,6 @@ Floor {
   tileSize 0.8 0.8
 }
 Nao {
+  rotation 0 0 1 2.87979
   controller "<extern>"
 }
